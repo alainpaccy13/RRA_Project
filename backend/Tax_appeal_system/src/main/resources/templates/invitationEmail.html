@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Appeals Meeting Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin: 0; padding: 0;">
+<div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+    <!-- Header with Image -->
+    <div style="text-align: center; padding: 20px 0;">
+        <!-- Replace the src with your actual image URL -->
+        <img src="https://excisestamps.rra.gov.rw/images/RRA_Logo_home.png"
+             alt="RRA Official Header"
+             style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+
+    <!-- Email Content -->
+    <div style="font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333333; padding: 30px;">
+        <!-- Subject -->
+        <div style="border-bottom: 2px solid #134E70; padding-bottom: 15px; margin-bottom: 25px;">
+            <h2 style="color: #134E70; margin: 0; font-size: 24px;" th:text="${subject}">Appeals Meeting Invitation</h2>
+        </div>
+
+        <!-- Salutation -->
+        <p style="margin-bottom: 20px;">Dear <strong th:text="${name}">Valued Colleague</strong>,</p>
+
+        <!-- Main Content -->
+        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin: 20px 0;">
+            <p style="margin: 0 0 15px 0;">On behalf of the Commissioner General, we are pleased to extend an invitation for you to attend a physical appeals meeting scheduled as follows:</p>
+
+            <div style="background: white; padding: 15px; border-left: 4px solid #134E70; margin: 15px 0;">
+                <p style="margin: 5px 0;"><strong>Meeting Type:</strong> In-Person (Face to Face)</p>
+                <p style="margin: 5px 0;"><strong>Date:</strong> <span th:text="${meetingDate}">Thursday</span></p>
+                <p style="margin: 5px 0;"><strong>Time:</strong> <span th:text="${meetingHour}">Meeting Time</span></p>
+                <p style="margin: 5px 0;"><strong>Venue:</strong> <span th:text="${venue}">RRA New Head Office - Sonatubes/Silverback Mall</span></p>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <p style="margin: 20px 0;">We recommend reviewing Pending Cases in Meeting dash on the application tax claim system. Review these materials in preparation for the meeting.</p>
+        <p> Please Indicate your Availability this Week :</p>
+        <button style="background-color: seagreen; color: white; font-size: x-large; padding: 10px; border:none;">
+            Availability Status
+        </button>
+
+
+        <!-- Closing -->
+        <div style="border-top: 1px solid #eaeaea; padding-top: 20px; margin-top: 25px;">
+            <p style="margin: 5px 0;">Best regards,</p>
+            <p style="margin: 5px 0;"><strong>Fridah</strong></p>
+            <p style="margin: 5px 0; color: #666; font-size: 14px;">Tel: 0788678808</p>
+        </div>
+
+        <!-- Footer with Logo -->
+        <div style="text-align: center; margin-top: 30px; padding: 15px; background-color: #f8f9fa; border-radius: 5px;">
+            <img src="https://scontent-mba2-1.xx.fbcdn.net/v/t39.30808-6/271708994_232359985744810_5026211307313265684_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=XkAwf29laaIQ7kNvwF3kXWK&_nc_oc=AdlaDMKtwWSXns9IBt-xNDfiTRFDSubB-6HT4adLMkIuF5rVsYZNCwea8OfuTGUF0ws&_nc_zt=23&_nc_ht=scontent-mba2-1.xx&_nc_gid=2bYS75vyDDFE6eTwZxVzJg&oh=00_AfeIHc4UM4GidKlleOg4yE5VF1QPfpNDWWnjH128dshjSA&oe=68FC08A8"
+                 alt="RRA Logo"
+                 style="max-width: 150px; height: auto; margin-bottom: 10px;">
+            <p style="font-size: 12px; color: #666; margin: 5px 0;">Rwanda Revenue Authority</p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
